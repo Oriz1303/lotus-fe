@@ -64,7 +64,7 @@ const ChatBox = () => {
 
   const [stompClient, setStompClient] = useState(null);
   useEffect(() => {
-    const sock = new SockJS("https://localhost:1303/ws");
+    const sock = new SockJS("https://lotus-server-production.up.railway.app/ws");
     const stomp = Stomp.over(sock);
     setStompClient(stomp);
 
