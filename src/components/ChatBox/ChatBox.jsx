@@ -64,7 +64,7 @@ const ChatBox = () => {
 
   const [stompClient, setStompClient] = useState(null);
   useEffect(() => {
-    const sock = new SockJS("http://localhost:1303/ws");
+    const sock = new SockJS("https://localhost:1303/ws");
     const stomp = Stomp.over(sock);
     setStompClient(stomp);
 
@@ -99,7 +99,9 @@ const ChatBox = () => {
 
   const onMessageReceived = (payload) => {
     const received = JSON.parse(payload.body);
+    console.log("received message", received);
     setMessages([...messages, received]);
+
   };
 
   useEffect(() => {
