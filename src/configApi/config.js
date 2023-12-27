@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export const API_BASE_URL = "https://lotus-server-production.up.railway.app";
+export const API_BASE_URL = "https://localhost:1303";
 
 const jwt = localStorage.getItem("jwt");
 
