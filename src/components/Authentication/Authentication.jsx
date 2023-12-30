@@ -34,7 +34,7 @@ const handleCloseAuthModel = () => setOpenAuthModel(false);
         </Grid>
 
         <Grid item className="px-10" xs={12} lg={5}>
-          <h1 className="mt-10 font-bold text-7xl">Oriz</h1>
+          <h1 className="mt-10 font-bold text-7xl">Lotus</h1>
           <h1 className="font-bold text-3xl py-16">Join My Social Now</h1>
           <div className="w-[60%]">
             <div className="w-full">
